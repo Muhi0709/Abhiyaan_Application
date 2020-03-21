@@ -1,3 +1,4 @@
+
 import cv2 as cv
 import numpy as np
 
@@ -26,10 +27,13 @@ def signal_detector():
             if(red!=0 or green!=0 or yellow!=0):
                 break
         if(red!=0):
+            #Image 1= 1.png
             print "Image ",k+1,": RED"
         elif(green!=0):
+            #Image 2= 2.png
             print "Image ",k+1,": GREEN"
         elif(yellow!=0):
+            #Image 3= 3.png
             print "Image ",k+1,": YELLOW"
 
 if __name__=='__main__':
