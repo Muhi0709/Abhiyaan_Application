@@ -68,14 +68,14 @@ def move():
 
         #linear speed is proportinal to distance btw the turtles
         #angular speed is proportional to angle btw the turtles
-        linear_speed=dist*k1                                      
-        angular_speed=(angle-orient)*k2                            
+        linear_speed=dist*K1                                      
+        angular_speed=(angle-orient)*K2                            
 
         message.linear.x=linear_speed
         message.angular.z=angular_speed
 		
         bot.publish(message)
-        print "x=",x,"y=",y,"Distance: ",dist
+        print "x=",x,"y=",y,"Distance: ",dist,"Angle btw turtles: ",(angle-orient)
         if(dist<=2):
             print "Abhiyaan found!!!!!"
             break
