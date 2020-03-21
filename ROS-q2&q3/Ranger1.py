@@ -11,7 +11,8 @@ def talk():
         #message is publised over the topic
         #no printing of message in the terminal or to the node's logfile(loginfo())
         stri = "Welcome to Abhiyaan"    
-        p.publish(stri)                 
+        p.publish(stri)
+        print "Sending data to Ranger2,,,,"
         rate.sleep()                    
 
 if __name__ == '__main__':
